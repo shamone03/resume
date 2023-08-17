@@ -1,0 +1,289 @@
+%-------------------------
+% Resume in Latex
+% Author : Jake Gutierrez
+% Based off of: https://github.com/sb2nov/resume
+% License : MIT
+%------------------------
+
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\input{glyphtounicode}
+
+
+%----------FONT OPTIONS----------
+% sans-serif
+% \usepackage[sfdefault]{FiraSans}
+% \usepackage[sfdefault]{roboto}
+% \usepackage[sfdefault]{noto-sans}
+% \usepackage[default]{sourcesanspro}
+
+% serif
+% \usepackage{CormorantGaramond}
+% \usepackage{charter}
+
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+% Ensure that generate pdf is machine readable/ATS parsable
+\pdfgentounicode=1
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      #1 & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & #2 \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-------------------------------------------
+%%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{document}
+
+%----------HEADING----------
+% \begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
+%   \textbf{\href{http://sourabhbajaj.com/}{\Large Sourabh Bajaj}} & Email : \href{mailto:sourabh@sourabhbajaj.com}{sourabh@sourabhbajaj.com}\\
+%   \href{http://sourabhbajaj.com/}{http://www.sourabhbajaj.com} & Mobile : +1-123-456-7890 \\
+% \end{tabular*}
+
+\begin{center}
+    \textbf{\Huge \scshape Aryah Kannan} \\ \vspace{1pt}
+    \small +1 (437) 679-0445 $|$ \href{mailto:aryah@dal.ca}{\underline{aryah@dal.ca}} $|$ 
+    \href{https://www.linkedin.com/in/aryahkannan/}{\underline{linkedin.com/in/aryah}} $|$
+    \href{https://github.com/shamone03}{\underline{github.com/shamone03}} $|$
+    \href{https://aryah.dev}{\underline{aryah.dev}}
+\end{center}
+
+
+%-----------EDUCATION-----------
+\section{Education}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {Dalhousie University}{Sep. 2020 -- May 2025}
+      {Bachelor of Computer Science, Dean's List}{GPA -- 3.94/4.30}
+  \resumeSubHeadingListEnd
+  
+%-----------PROGRAMMING SKILLS-----------
+\section{Technical Skills}
+ \begin{itemize}[leftmargin=0.15in, label={}]
+    \small{\item{
+     \textbf{Languages}{: Java, C\#, C/C++, JavaScript, HTML/CSS,  Python, PHP, SQL} \\
+     \textbf{Frameworks}{: Android, Unity Engine, Photon Engine, Unreal Engine 5} \\
+     \textbf{Libraries}{: Three.js, React.js, Mantine, MUI, Bcrypt.js, Tailwind, Bootstrap, Express.js, OpenGL, Junit, Espresso} \\
+     \textbf{Cloud}{: Google App Engine, Google Storage Bucket, Heroku, GitHub Pages, AWS EC2, Firebase Cloud Functions} \\
+     \textbf{Databases}{: MongoDB, MySQL, Firebase Realtime Database} \\
+     \textbf{Developer Tools}{: Git, GitHub, GitLab, Blender, Bash, Linux, CI/CD, Visual Studio, Wireshark, Postman} \\
+     
+    }}
+ \end{itemize}
+
+ 
+%-----------EXPERIENCE-----------
+    
+\section{Experience}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {\textbf{Research Volunteer} $|$ \emph{Unity, C\#, Blender} }{Jul. 2023 -- Present}
+      {HCI4Good Lab}{Halifax, NS}
+      \resumeItemListStart
+        \resumeItem{Created a database using MySQL designed to plan the academic timetable}
+        \resumeItem{Used React with Material UI to create drag-and-drop UI}
+        \resumeItem{Integrated with the university's CAS for security}
+      \resumeItemListEnd
+
+    \resumeSubheading
+      {\textbf{Full Stack Developer} $|$ \emph{React.js, Node.js, MySQL, Apache, Material UI} }{Jun. 2023 -- Aug. 2023}
+      {Dalhousie University}{Halifax, NS}
+      \resumeItemListStart
+        \resumeItem{Created a database using MySQL designed to plan the academic timetable}
+        \resumeItem{Used React with Material UI to create drag-and-drop UI}
+        \resumeItem{Integrated with the university's CAS for security}
+      \resumeItemListEnd
+
+
+    \resumeSubheading
+      {\textbf{Tutor}}{Dec. 2022 -- Present}
+      {TutorBright}{Halifax, NS}
+      \resumeItemListStart
+        \resumeItem{Tutored high school students to help them comprehend their academic material, improving their grades by 20\%}
+        \resumeItem{Mentored students to boost their confidence and provide guidance through their high school journey}
+        \resumeItem{Taught mathematics and computer science, ensuring comprehensive understanding and knowledge transfer}
+      \resumeItemListEnd
+      
+% -----------Multiple Positions Heading-----------
+%    \resumeSubSubheading
+%     {Software Engineer I}{Oct 2014 - Sep 2016}
+%     \resumeItemListStart
+%        \resumeItem{Apache Beam}
+%          {Apache Beam is a unified model for defining both batch and streaming data-parallel processing pipelines}
+%     \resumeItemListEnd
+%    \resumeSubHeadingListEnd
+%-------------------------------------------
+
+  \resumeSubHeadingListEnd
+
+%-----------PROJECTS-----------
+\section{Projects}
+    \resumeSubHeadingListStart
+
+      \resumeProjectHeading
+          {\textbf{ECR14} $|$ \emph{Git, JavaScript, MongoDB, Node, React, MaterialUI}}{\href{https://github.com/shamone03/ECR14}{\underline{Repository}}}
+          \resumeItemListStart
+            \resumeItem{Developed a full-stack web application for a housing society and deployed it on Google App Engine}
+            \resumeItem{Served 500+ users, resulting in a cost-saving of \$2000 CAD by eliminating the need for a third-party solution}
+            \resumeItem{Implemented features for users to raise complaints, book amenities, and create polls and surveys}
+            \resumeItem{Ensured enhanced security by incorporating two-factor authentication}
+          \resumeItemListEnd  
+    
+              
+    \resumeProjectHeading
+          {\textbf{QuicKash} $|$ \emph{Agile, XP, TDD, Android Studio, Java, Firebase, GitLabCI}}{\href{https://github.com/shamone03/quickash}{\underline{Repository}}}
+          \resumeItemListStart
+            \resumeItem{Worked collaboratively in a team of 7 to develop an Android application for posting and applying to small jobs}
+            \resumeItem{Incorporated push notifications to inform users about new jobs in their area}
+            \resumeItem{Utilized Firebase Realtime Database and Cloud Functions for seamless live updates}
+            \resumeItem{Designed a responsive user interface (UI) to ensure compatibility across different screen sizes}
+          \resumeItemListEnd
+
+
+    \resumeProjectHeading
+          {\textbf{OpenGL Application} $|$ \emph{C++, GLSL, Glad}}{\href{https://github.com/shamone03/OpenGL3DRenderer}{\underline{Repository}}}
+          \resumeItemListStart
+            \resumeItem{OpenGL application that can render basic shapes}
+            \resumeItem{Uses GLSL shaders}
+            \resumeItem{Indexed vertex buffers for improved performance}
+            \resumeItem{Currently in development to render basic images}
+          \resumeItemListEnd
+
+          
+      % \resumeProjectHeading
+      %     {\textbf{Defense of the Mortals} $|$ \emph{Unity, C\#, Photon Engine, Data Structures \& Algorithms}}{\href{https://github.com/shamone03/UnityGame}{\underline{Repository}}}
+      %     \resumeItemListStart
+      %       \resumeItem{Created a proof-of-concept first-person shooter game}
+      %       \resumeItem{Utilized the Photon Engine for peer-to-peer multiplayer networking}
+      %       \resumeItem{In-built Navigation AI to control non-playable characters (NPCs)}
+      %       \resumeItem{Included player-vs-player (PvP) and player-vs-environment (PvE) elements}
+      %     \resumeItemListEnd
+
+    \resumeProjectHeading
+          {\textbf{Interactive Public Display Game} $|$ \emph{Unity, C\#, Blender, Finite State Machine}}{\href{https://github.com/shamone03/UnityGame}{\underline{Repository}}}
+          \resumeItemListStart
+            \resumeItem{An interactive game hosted on a large touch screen display to teach people about EDIA}
+            \resumeItem{Implemented a Finite State Machine pattern and used Scriptable Objects to allow high scalability and modularity}
+            \resumeItem{Worked in a team to create documentation for improved maintainability}
+            \resumeItem{Custom maze generation algorithm to create a hexagonal grid}
+          \resumeItemListEnd
+
+
+
+    \resumeSubHeadingListEnd
+
+%-------------------------------------------
+
+
+\section{Extra curricular}
+\resumeSubHeadingListStart
+    \resumeProjectHeading
+      {\textbf{Global Game Jam 2023}}{\href{https://globalgamejam.org/2023/games/plantman-6}{\underline{Submission}}}
+      \resumeItemListStart
+        \resumeItem{Collaborated in a team to develop a nature-themed game using Unity}
+        \resumeItem{Used procedural shaders for creating bridges made of smaller bridges}
+        \resumeItem{Showcased and presented the game to a large audience}
+      \resumeItemListEnd
+
+    \resumeProjectHeading
+      {\textbf{Ludum-Dare Game Jam 53}}{\href{https://shamone.itch.io/caravambulance}{\underline{Submission}}}
+      \resumeItemListStart
+        \resumeItem{Developed an action game centered around being an emergency response driver}
+        \resumeItem{Made custom assets using Blender}
+        \resumeItem{Realistic Car physics using Unity's PhysX wheel colliders}
+      \resumeItemListEnd
+
+    \resumeProjectHeading
+      {\textbf{Ludum-Dare Game Jam 52}}{\href{https://ldjam.com/events/ludum-dare/52/ohio-simulator}{\underline{Submission}}}
+      \resumeItemListStart
+        \resumeItem{Created a top-down survival shooter game}
+        \resumeItem{Collaborated with team members to expand the game within a 72-hour time constraint}
+        \resumeItem{Used Unity Shader Graph to create a retro look and feel}
+      \resumeItemListEnd
+
+    \resumeProjectHeading
+      {\textbf{BMJ Game Jam}}{\href{https://simlo.itch.io/im-on-it}{\underline{Submission}}}
+      \resumeItemListStart
+        \resumeItem{Made a custom gravity physics to simulate space}
+        \resumeItem{Used post-processing and Unity VFXGraph to create a vibrant environment}
+        \resumeItem{Completed in 48 hours in a team of 4, using GitHub Projects for issue tracking}
+      \resumeItemListEnd
+      
+      % \resumeSubheadingTwo{Global Game Jam 2023}{\href{https://globalgamejam.org/2023/games/plantman-6}{\underline{Submission}}}
+      % {Worked in a team to create a nature themed game with Unity and used Blender to create assets and shaders. Used git to manage a large codebase.}
+      % \resumeSubheadingTwo{Ludum-Dare Game Jam}{\href{https://ldjam.com/events/ludum-dare/52/ohio-simulator}{\underline{Submission}}}
+      % {Created a top-down shooter, employing the use of shaders. Collaborated with team-mates to further expand the game within a 72 hour window.}
+\resumeSubHeadingListEnd
+
+\end{document}
